@@ -139,6 +139,10 @@ static void PlayerMove(ref char[,] matrics, char token)
                 matrics[iIndex, jIndex] = token;
                 madeMove = false;
             }
+            else
+            {
+                Console.WriteLine("Your j index is out of range or your chosen square is not empty Please enter it again");
+            }
         }
         else
         {
